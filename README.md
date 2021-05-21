@@ -18,5 +18,5 @@ in my case, I used axios:
 >(Multiple images)https://api.unsplash.com/photos/random/?count=50 <br>
 >(Single Random image) https://source.unsplash.com/collection/220381/1600x900
 
-*Deplyed here:*
+*Deployed here: *<br>
 [https://unsplash-clone01.herokuapp.com/](https://unsplash-clone01.herokuapp.com/)
