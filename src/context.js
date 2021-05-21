@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 const UnsplashContext = React.createContext();
 const rootUrl = "https://api.unsplash.com";
 const searchUrl = `${rootUrl}/search/photos?per_page=50&query=`;
-const getPhotos = `${rootUrl}/photos/random/?count=50`;
-
-axios.defaults.headers.common[
-  "Authorization"
-] = `CLIENT_ID ${process.env.REACT_APP_ACCESS_KEY}`;
+const getPhotos = `https://api.unsplash.com/photos/random/?count=50&client_id=${process.env.REACT_APP_ACCESS_KEY}`;
 
 const ImageProvider = ({ children }) => {
   const [images, setImages] = useState([]);
 
   //   Get the latest movies
   const GetImages = async () => {
+    console.log(process.env);
     await axios
       .get(getPhotos)
       .then((response) => {
@@ -26,7 +23,7 @@ const ImageProvider = ({ children }) => {
   // Search for Movies
   const SearchImages = async (term) => {
     await axios
-      .get(searchUrl + term)
+      .get(searchUrl + term + `&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
       .then((response) => setImages(response.data.results))
       .catch((error) => console.log(error));
   };
