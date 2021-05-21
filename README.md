@@ -17,3 +17,6 @@ in my case, I used axios:
 >(Search image) https://api.unsplash.com/search/photos?per_page=50&query= <br>
 >(Multiple images)https://api.unsplash.com/photos/random/?count=50 <br>
 >(Single Random image) https://source.unsplash.com/collection/220381/1600x900
+
+*Deployed here: *<br>
+[https://unsplash-clone01.herokuapp.com/](https://unsplash-clone01.herokuapp.com/)
