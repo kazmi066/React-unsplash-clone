@@ -6,8 +6,9 @@ const rootUrl = "https://api.unsplash.com";
 const searchUrl = `${rootUrl}/search/photos?per_page=50&query=`;
 const getPhotos = `${rootUrl}/photos/random/?count=50`;
 
-axios.defaults.headers.common["Authorization"] =
-  "Client-ID 4KLoIMe9UUqlIwgHX1jxZBVTm3s5YvnRgfsu7ukCWK0";
+axios.defaults.headers.common[
+  "Authorization"
+] = `CLIENT_ID ${process.env.ACCESS_KEY}`;
 
 const ImageProvider = ({ children }) => {
   const [images, setImages] = useState([]);
