@@ -5,7 +5,13 @@ Uses:
  - Unsplash Api
  - Responsive Grid
 
-*You have to grab your API key from [unsplash](https://unsplash.com/developers)*
+*You have to grab your API key from [unsplash](https://unsplash.com/developers)* <br>
+
+Place that key in your headers to get the results: <br>
+in my case, I used axios:
+```
+  axios.defaults.headers.common["Authorization"] ="Client-ID key";
+  ```
 
 ### Endpoints used:
 >(Search image) https://api.unsplash.com/search/photos?per_page=50&query= <br>
