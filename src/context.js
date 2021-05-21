@@ -8,7 +8,7 @@ const getPhotos = `${rootUrl}/photos/random/?count=50`;
 
 axios.defaults.headers.common[
   "Authorization"
-] = `CLIENT_ID ${process.env.ACCESS_KEY}`;
+] = `CLIENT_ID ${process.env.REACT_APP_ACCESS_KEY}`;
 
 const ImageProvider = ({ children }) => {
   const [images, setImages] = useState([]);
