@@ -5,6 +5,8 @@ Uses:
  - Unsplash Api
  - Responsive Grid
 
+*You have to grab your API key from [unsplash](https://unsplash.com/developers)*
+
 ### Endpoints used:
 >(Search image) https://api.unsplash.com/search/photos?per_page=50&query= <br>
 >(Multiple images)https://api.unsplash.com/photos/random/?count=50 <br>
