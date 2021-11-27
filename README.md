@@ -5,6 +5,9 @@ Uses:
  - Unsplash Api
  - Responsive Grid
 
+## Demo Screenshot <br/>
+![](https://github.com/kazmi066/unsplash-clone/blob/master/uploads/Screenshot%202021-11-27%20at%2009-12-11%20React%20App(1).png)
+
 *You have to grab your API key from [unsplash](https://unsplash.com/developers)* <br>
 
 Place that key in your headers to get the results: <br>
