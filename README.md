@@ -22,4 +22,4 @@ in my case, I used axios:
 >(Single Random image) https://source.unsplash.com/collection/220381/1600x900
 
 *Deployed here: *<br>
-[https://unsplash-clone01.herokuapp.com/](https://unsplash-clone01.herokuapp.com/)
+[https://unsplash-clone-d3.netlify.app/](https://unsplash-clone-d3.netlify.app/)
